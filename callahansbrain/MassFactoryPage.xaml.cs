@@ -26,5 +26,41 @@ namespace callahansbrain
 		{
 			this.InitializeComponent();
 		}
+		private void MainPageClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//powrot
+		}
+		private void FactoryClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//ustawia tryb Factory
+		}
+		private void SmallArmsClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od small armsow
+		}
+		private void HeavyArmsClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od heavy armsow
+		}
+		private void VehicleClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od pojazdow
+		}
+		private void ShippableClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od kontenerow
+		}
 	}
 }

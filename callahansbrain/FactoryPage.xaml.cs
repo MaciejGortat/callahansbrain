@@ -26,5 +26,47 @@ namespace callahansbrain
 		{
 			this.InitializeComponent();
 		}
+		private void MainPageClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//powrot
+		}
+		private void MassFactoryClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//ustawia tryb MassFactory
+		}
+		private void SmallArmsClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od small armsow
+		}
+		private void HeavyArmsClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od heavy armsow
+		}
+		private void UtilityClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od heavy armsow
+		}
+		private void MedicalClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od heavy armsow
+		}
+		private void SuppliesClick(object sender, RoutedEventArgs e)
+		{
+			Button b = (Button)sender;
+			throw new NotImplementedException();
+			//wyswietla buttony od heavy armsow
+		}
 	}
 }
