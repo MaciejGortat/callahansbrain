@@ -25,6 +25,34 @@ namespace callahansbrain
         public MainPage()
         {
             this.InitializeComponent();
+            CreateControls();
+        }
+
+        private void CreateControls()
+        {
+			// Initialize a new Button control
+			Button button1 = new Button
+			{
+				// Set button content
+				Content = "Click Me",
+
+				// Set button height and width
+				Width = 200,
+				Height = 75
+			};
+
+			// Add a click event
+			button1.Click += Button1_Click;
+
+            // Add the newly created button control to the stack panel
+            grid1.Children.Add(button1);
+        }
+
+        // Handle the button click event
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            Button b = (Button)sender;
+            b.Content = "Clicked";
         }
     }
 }
