@@ -10,6 +10,8 @@
 
     <Grid x:Name="Factory">
         <TextBlock HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="858,10,0,0" Text="FACTORY" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Style="{StaticResource TitleTextBlockStyle}"/>
+
         <Button Content="Mass Production Factory" Height="90" Margin="1732,10,0,0" VerticalAlignment="Top" Width="178" Click="MassFactoryClick"/>
         <Button Content="Small Arms Facillity" Height="102" Margin="45,55,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Heavy Arm Facillity" Height="102" Margin="280,55,0,0" VerticalAlignment="Top" Width="175"/>
