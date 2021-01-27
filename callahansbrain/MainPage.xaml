@@ -9,8 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="main">
-        <Button Content="Factory" Height="90" Margin="495,82,0,0" VerticalAlignment="Top" Width="178"/>
-        <TextBlock HorizontalAlignment="Left" Height="66" Margin="370,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
-        <Button Content="Mass Production Factory" Height="90" Margin="876,82,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button Content="Factory" Height="90" Margin="618,82,0,0" VerticalAlignment="Top" Width="178"/>
+        <TextBlock HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
+        <Button Content="Mass Production Factory" Height="90" Margin="1194,82,0,0" VerticalAlignment="Top" Width="178"/>
     </Grid>
 </Page>
