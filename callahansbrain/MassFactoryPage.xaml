@@ -8,7 +8,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="MassFactory">
+        <TextBlock HorizontalAlignment="Left" Height="66" Margin="370,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
+        <Button Content="Vehicle Facillity" Height="102" Margin="818,133,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button Content="Small Arms Facillity" Height="102" Margin="153,133,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button Content="Heavy Arm Facillity" Height="102" Margin="476,133,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button Content="Shippable Facillity" Height="102" Margin="1179,133,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button Content="Clear list" Height="32" Margin="31,468,0,0" VerticalAlignment="Top" Width="243"/>
+        <Button Content="Main Page" Height="90" Margin="1115,10,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button Content="Factory" Height="90" Margin="1312,10,0,0" VerticalAlignment="Top" Width="178"/>
 
     </Grid>
 </Page>
