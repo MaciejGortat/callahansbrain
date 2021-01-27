@@ -41,11 +41,11 @@ namespace callahansbrain
 				Height = 75
 			};
 
-			// Add a click event
-			button1.Click += Button1_Click;
+            // Add a click event
+            button1.Click += Button1_Click;
 
             // Add the newly created button control to the stack panel
-            grid1.Children.Add(button1);
+            //grid1.Children.Add(button1);
         }
 
         // Handle the button click event
@@ -56,14 +56,12 @@ namespace callahansbrain
         }
         private void FactoryClick(object sender, RoutedEventArgs e)
         {
-            Button b = (Button)sender;
-            throw new NotImplementedException();
+            this.Frame.Navigate(typeof(FactoryPage));
             //ustawia tryb Factory
         }
         private void MassFactoryClick(object sender, RoutedEventArgs e)
         {
-            Button b = (Button)sender;
-            throw new NotImplementedException();
+            this.Frame.Navigate(typeof(MassFactoryPage));
             //ustawia tryb MassFactory
         }
     }

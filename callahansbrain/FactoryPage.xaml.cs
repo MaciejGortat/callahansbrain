@@ -28,14 +28,12 @@ namespace callahansbrain
 		}
 		private void MainPageClick(object sender, RoutedEventArgs e)
 		{
-			Button b = (Button)sender;
-			throw new NotImplementedException();
+			this.Frame.Navigate(typeof(MainPage));
 			//powrot
 		}
 		private void MassFactoryClick(object sender, RoutedEventArgs e)
 		{
-			Button b = (Button)sender;
-			throw new NotImplementedException();
+			this.Frame.Navigate(typeof(MassFactoryPage));
 			//ustawia tryb MassFactory
 		}
 		private void SmallArmsClick(object sender, RoutedEventArgs e)

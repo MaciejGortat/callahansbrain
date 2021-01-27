@@ -10,13 +10,13 @@
 
     <Grid x:Name="Factory">
         <TextBlock HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
-        <Button Content="Mass Production Factory" Height="90" Margin="1732,10,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button Content="Mass Production Factory" Height="90" Margin="1732,10,0,0" VerticalAlignment="Top" Width="178" Click="MassFactoryClick"/>
         <Button Content="Small Arms Facillity" Height="102" Margin="45,55,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Heavy Arm Facillity" Height="102" Margin="280,55,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Utillity Facillity" Height="102" Margin="520,55,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Medical Facillity" Height="102" Margin="765,55,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Supplies Facillity" Height="102" Margin="992,55,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button Content="Main Page" Height="90" Margin="1526,10,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button Content="Main Page" Height="90" Margin="1526,10,0,0" VerticalAlignment="Top" Width="178" Click="MainPageClick"/>
         <Button Content="Clear list" Height="32" Margin="1597,125,0,0" VerticalAlignment="Top" Width="243"/>
 
     </Grid>
