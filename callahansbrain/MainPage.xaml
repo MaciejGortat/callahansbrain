@@ -8,14 +8,14 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="grid1">
         <Button Content="Factory" Height="90" Margin="495,82,0,0" VerticalAlignment="Top" Width="178"/>
         <TextBlock HorizontalAlignment="Left" Height="66" Margin="370,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
         <Button Content="Mass Production Factory" Height="90" Margin="876,82,0,0" VerticalAlignment="Top" Width="178"/>
         <Button Content="Small Arms Facillity" Height="102" Margin="31,189,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Heavy Arm Facillity" Height="102" Margin="238,189,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Utillity Facillity" Height="102" Margin="451,189,0,0" VerticalAlignment="Top" Width="175" Click="Button_Click_1"/>
-        <Button Content="Medical Facillity" Height="102" Margin="0,189,0,0" VerticalAlignment="Top" Width="175" HorizontalAlignment="Center"/>
+        <Button Content="Medical Facillity" Height="102" Margin="670,189,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Supplies Facillity" Height="102" Margin="879,189,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Vehicle Facillity" Height="102" Margin="1090,189,0,0" VerticalAlignment="Top" Width="175"/>
         <Button Content="Shippable Facillity" Height="102" Margin="1297,189,0,0" VerticalAlignment="Top" Width="175"/>
