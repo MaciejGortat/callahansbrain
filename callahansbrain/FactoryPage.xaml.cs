@@ -66,5 +66,6 @@ namespace callahansbrain
 			throw new NotImplementedException();
 			//wyswietla buttony od heavy armsow
 		}
-	}
+
+    }
 }

@@ -21,5 +21,53 @@
         <Button Content="Main Page" Height="90" Margin="1526,10,0,0" VerticalAlignment="Top" Width="178" Click="MainPageClick"/>
         <Button Content="Clear list" Height="32" Margin="1597,125,0,0" VerticalAlignment="Top" Width="243"/>
 
+        <Button Height="60" Margin="30,168,0,0" VerticalAlignment="Top" Width="60" >
+            <Image Source="/Assets/Factory/Revolver.png" Margin="-10,-6,-10,-7" />
+        </Button>
+        <Button Height="60" Margin="100,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/44.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="170,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/Rifle.png" Margin="-10,-6,-10,-7" />
+        </Button>
+        <Button Height="60" Margin="240,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/762mm.png" Margin="-10,-6,-10,-7" />
+        </Button>
+        <Button Height="60" Margin="310,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/Carabine.png" Margin="-10,-6,-10,-7" />
+        </Button>
+        <Button Height="60" Margin="380,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/7.62_Carbine.png" Margin="-10,-6,-10,-7" />
+        </Button>
+        <Button Height="60" Margin="450,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/Smg-1.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="520,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/9mm_SMG.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="590,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/Shotgun.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="660,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/Buckshot.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="730,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/StormRifle.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="800,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/7.92mmv1.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="870,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/SniperRifle.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="940,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/SniperRifleAmmo.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="1010,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/Smk_Grenade.png" Margin="-10,-6,-10,-7"/>
+        </Button>
+        <Button Height="60" Margin="1080,168,0,0" VerticalAlignment="Top" Width="60">
+            <Image Source="/Assets/Factory/LightMachineGun.png" Margin="-10,-6,-10,-7"/>
+        </Button>
     </Grid>
 </Page>

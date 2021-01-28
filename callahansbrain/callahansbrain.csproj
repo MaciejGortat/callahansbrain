@@ -136,6 +136,22 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Factory\44.png" />
+    <Content Include="Assets\Factory\7.62_Carbine.png" />
+    <Content Include="Assets\Factory\7.92mmv1.png" />
+    <Content Include="Assets\Factory\762mm.png" />
+    <Content Include="Assets\Factory\9mm_SMG.png" />
+    <Content Include="Assets\Factory\Buckshot.png" />
+    <Content Include="Assets\Factory\Carabine.png" />
+    <Content Include="Assets\Factory\LightMachineGun.png" />
+    <Content Include="Assets\Factory\Revolver.png" />
+    <Content Include="Assets\Factory\Rifle.png" />
+    <Content Include="Assets\Factory\Shotgun.png" />
+    <Content Include="Assets\Factory\Smg-1.png" />
+    <Content Include="Assets\Factory\Smk_Grenade.png" />
+    <Content Include="Assets\Factory\SniperRifleAmmo.png" />
+    <Content Include="Assets\Factory\SniperRifle.png" />
+    <Content Include="Assets\Factory\StormRifle.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -168,6 +184,7 @@
       <Version>6.2.10</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
