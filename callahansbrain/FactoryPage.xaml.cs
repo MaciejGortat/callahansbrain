@@ -44,26 +44,22 @@ namespace callahansbrain
 		}
 		private void HeavyArmsClick(object sender, RoutedEventArgs e)
 		{
-			Button b = (Button)sender;
-			throw new NotImplementedException();
+			HeavyArmsPanel.Visibility = Visibility.Visible;
 			//wyswietla buttony od heavy armsow
 		}
 		private void UtilityClick(object sender, RoutedEventArgs e)
 		{
-			Button b = (Button)sender;
-			throw new NotImplementedException();
+			UtillityPanel.Visibility = Visibility.Visible;
 			//wyswietla buttony od heavy armsow
 		}
 		private void MedicalClick(object sender, RoutedEventArgs e)
 		{
-			Button b = (Button)sender;
-			throw new NotImplementedException();
+			MedicalPanel.Visibility = Visibility.Visible;
 			//wyswietla buttony od heavy armsow
 		}
 		private void SuppliesClick(object sender, RoutedEventArgs e)
 		{
-			Button b = (Button)sender;
-			throw new NotImplementedException();
+			SSPanel.Visibility = Visibility.Visible;
 			//wyswietla buttony od heavy armsow
 		}
 
