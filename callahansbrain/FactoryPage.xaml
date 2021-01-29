@@ -8,6 +8,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
+
+        </Grid.Background>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>

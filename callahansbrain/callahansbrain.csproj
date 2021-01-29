@@ -136,6 +136,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\emothic_commission_FULL.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\127mm.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\14.5mm.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\250mm.png" />
@@ -194,6 +195,7 @@
     <Content Include="Assets\Factory\UttilityFolder\Shovel.png" />
     <Content Include="Assets\Factory\UttilityFolder\Sledge_Hammer.png" />
     <Content Include="Assets\Factory\UttilityFolder\Wrench.png" />
+    <Content Include="Assets\Foxhole.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

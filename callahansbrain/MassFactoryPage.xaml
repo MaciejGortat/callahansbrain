@@ -9,6 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="MassFactory">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
+
+        </Grid.Background>
+
         <TextBlock HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="747,10,0,0" Text="MASS PRODUCTION FACTORY" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" Style="{StaticResource TitleTextBlockStyle}"/>
 
