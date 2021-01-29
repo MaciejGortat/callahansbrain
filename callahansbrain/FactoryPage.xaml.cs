@@ -26,6 +26,7 @@ namespace callahansbrain
 		{
 			this.InitializeComponent();
 		}
+
 		private void MainPageClick(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MainPage));
@@ -38,8 +39,7 @@ namespace callahansbrain
 		}
 		private void SmallArmsClick(object sender, RoutedEventArgs e)
 		{
-			Button b = (Button)sender;
-			throw new NotImplementedException();
+			SmallArmsPanel.Visibility = Visibility.Visible;
 			//wyswietla buttony od small armsow
 		}
 		private void HeavyArmsClick(object sender, RoutedEventArgs e)
