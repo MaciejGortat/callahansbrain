@@ -30,37 +30,15 @@ namespace callahansbrain
 		#region Navigation event handling
 		private void TopLevelNav_Loaded(object sender, RoutedEventArgs e)
 		{
-			NavigationView nv = (NavigationView)sender;
-			//ustawianie domyslanego zaznaczenia
-			foreach (NavigationViewItemBase item in TopLevelNav.MenuItems)
-			{
-				if (item is NavigationViewItem && item.Tag.ToString() == this.GetType().Name.ToString())
-				{
-					TopLevelNav.SelectedItem = item;
-					//przypomnij mi zebym ci wytlumaczyl co tu sie dzieje, jak ogarniasz to usun ten komentarz
-					break;
-				}
-			}
-			nv.IsBackEnabled = Frame.CanGoBack;
+			TopLevelNavHandler.OnLoaded((NavigationView)sender, this);
 		}
 		private void TopLevelNav_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
 		{
-			NavigationViewItem Item = (NavigationViewItem)args.InvokedItemContainer;
-			string Tag = (string)Item.Tag;
-			Dictionary<string, Type> LookupDict = new Dictionary<string, Type>
-			{
-				{ "MainPage", typeof(MainPage) },
-				{ "FactoryPage", typeof(FactoryPage) },
-				{ "MassFactoryPage", typeof(MassFactoryPage) }
-			};
-			this.Frame.Navigate(LookupDict[Tag]);
+			TopLevelNavHandler.OnItemInvoked(args, this);
 		}
 		private void TopLevelNav_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
 		{
-			if (Frame.CanGoBack)
-			{
-				Frame.GoBack();
-			}
+			TopLevelNavHandler.OnBackRequested(this);
 		}
 		#endregion
 		private void SmallArmsClick(object sender, RoutedEventArgs e)
