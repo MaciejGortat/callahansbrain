@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,44 +26,43 @@ namespace callahansbrain
         public MainPage()
         {
             this.InitializeComponent();
-            CreateControls();
         }
-
-        private void CreateControls()
-        {
-			// Initialize a new Button control
-			Button button1 = new Button
+		#region Navigation event handling
+		private void TopLevelNav_Loaded(object sender, RoutedEventArgs e)
+		{
+			NavigationView nv = (NavigationView)sender;
+			//ustawianie domyslanego zaznaczenia
+			foreach (NavigationViewItemBase item in TopLevelNav.MenuItems)
 			{
-				// Set button content
-				Content = "Click Me",
-
-				// Set button height and width
-				Width = 200,
-				Height = 75
+				if (item is NavigationViewItem && item.Tag.ToString() == this.GetType().Name.ToString())
+				{
+					TopLevelNav.SelectedItem = item;
+					//przypomnij mi zebym ci wytlumaczyl co tu sie dzieje, jak ogarniasz to usun ten komentarz
+					break;
+				}
+			}
+			nv.IsBackEnabled = Frame.CanGoBack;
+		}
+		private void TopLevelNav_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+		{
+			NavigationViewItem Item = (NavigationViewItem)args.InvokedItemContainer;
+			string Tag = (string)Item.Tag;
+			Dictionary<string, Type> LookupDict = new Dictionary<string, Type>
+			{
+				{ "MainPage", typeof(MainPage) },
+				{ "FactoryPage", typeof(FactoryPage) },
+				{ "MassFactoryPage", typeof(MassFactoryPage) }
 			};
-
-            // Add a click event
-            button1.Click += Button1_Click;
-
-            // Add the newly created button control to the stack panel
-            //grid1.Children.Add(button1);
-        }
-
-        // Handle the button click event
-        private void Button1_Click(object sender, RoutedEventArgs e)
-        {
-            Button b = (Button)sender;
-            b.Content = "Clicked";
-        }
-        private void FactoryClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(FactoryPage));
-            //ustawia tryb Factory
-        }
-        private void MassFactoryClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MassFactoryPage));
-            //ustawia tryb MassFactory
-        }
-    }
+			this.Frame.Navigate(LookupDict[Tag]);
+		}
+		private void TopLevelNav_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
+		{
+			Debug.Write("tutaj");
+			if (Frame.CanGoBack)
+			{
+				Frame.GoBack();
+			}
+		}
+		#endregion
+	}
 }

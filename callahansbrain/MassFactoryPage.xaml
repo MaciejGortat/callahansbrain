@@ -9,21 +9,32 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="MassFactory">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
 
         </Grid.Background>
-
-        <TextBlock HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
-        <TextBlock HorizontalAlignment="Left" Height="50" Margin="747,10,0,0" Text="MASS PRODUCTION FACTORY" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" Style="{StaticResource TitleTextBlockStyle}"/>
-
-        <Button Content="Vehicle Facillity" Height="102" Margin="818,55,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button Content="Small Arms Facillity" Height="102" Margin="153,55,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button Content="Heavy Arm Facillity" Height="102" Margin="476,55,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button Content="Shippable Facillity" Height="102" Margin="1179,55,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button Content="Clear list" Height="32" Margin="1597,125,0,0" VerticalAlignment="Top" Width="243"/>
-        <Button Content="Main Page" Height="90" Margin="1526,10,0,0" VerticalAlignment="Top" Width="178" Click="MainPageClick"/>
-        <Button Content="Factory" Height="90" Margin="1732,10,0,0" VerticalAlignment="Top" Width="178" Click="FactoryClick"/>
-
+        <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Main" Tag="MainPage" />
+                <NavigationViewItem Content="Factory" Tag="FactoryPage" />
+                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock Height="66" Width="790" Text="Callahan Brain made by Qache &amp; Mircin"/>
+            <TextBlock Height="50" Width="394" Text="MASS PRODUCTION FACTORY" Style="{StaticResource TitleTextBlockStyle}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button Content="Vehicle Facillity" Height="102" Width="175"/>
+            <Button Content="Small Arms Facillity" Height="102" Width="175"/>
+            <Button Content="Heavy Arm Facillity" Height="102" Width="175"/>
+            <Button Content="Shippable Facillity" Height="102" Width="175"/>
+        </StackPanel>
     </Grid>
 </Page>

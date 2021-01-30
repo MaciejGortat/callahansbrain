@@ -8,26 +8,31 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
-
-        </Grid.Background>
-
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
-        <Button Content="Clear list" Height="32" Margin="1597,0,0,0" Width="243" Grid.Row="0"/>
+        <!--<Grid.Background>
+            <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
+        </Grid.Background>-->
+        <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Main" Tag="MainPage" />
+                <NavigationViewItem Content="Factory" Tag="FactoryPage" />
+                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+        <!--<Button Content="Clear list" Height="32" Margin="1597,0,0,0" Width="243" Grid.Row="0"/>
         <Button Content="Mass Production Factory" Height="100" Margin="1500,0,0,0"  Width="200" Click="MassFactoryClick" Grid.Row="1"/>
-        <Button Content="Main Page" Height="100"  Width="200" Margin="1700,0,0,0" Click="MainPageClick" Grid.Row="1"/>
+        <Button Content="Main Page" Height="100"  Width="200" Margin="1700,0,0,0" Click="MainPageClick" Grid.Row="1"/>-->
 
-        <StackPanel Grid.Row="0">
-            <TextBlock HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
-            <TextBlock HorizontalAlignment="Left" Height="50" Margin="858,10,0,0" Text="FACTORY" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Style="{StaticResource TitleTextBlockStyle}"/>
-
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" Width="790"/>
+            <TextBlock Height="50" Text="FACTORY" TextWrapping="Wrap" Width="175" Style="{StaticResource TitleTextBlockStyle}"/>
         </StackPanel>
-        <StackPanel x:Name="Factory" Orientation="Horizontal" Grid.Row="1">
+        <StackPanel x:Name="FactoryPanel" Orientation="Horizontal" Grid.Row="2">
             <Button Content="Small Arms Facillity" Height="100" Width="175" Click="SmallArmsClick"/>
             <Button Content="Heavy Arm Facillity" Height="100" Width="175" Click="HeavyArmsClick"/>
             <Button Content="Utillity Facillity" Height="100" Width="175" Click="UtilityClick"/>
@@ -35,7 +40,7 @@
             <Button Content="Supplies Facillity" Height="100" Width="175" Click="SuppliesClick"/>
         </StackPanel>
 
-        <StackPanel x:Name="SmallArmsPanel" Grid.Row="2" Orientation="Horizontal" Visibility="Collapsed" >
+        <StackPanel x:Name="SmallArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed" >
             <Button Height="60"  VerticalAlignment="Top" Width="60" >
                 <Image Source="/Assets/Factory/SmallArmsFolder/Revolver.png" Margin="-10,-6,-10,-7" />
             </Button>
@@ -84,6 +89,7 @@
             <Button Height="60"  VerticalAlignment="Top" Width="60">
                 <Image Source="/Assets/Factory/SmallArmsFolder/LightMachineGun.png" Margin="-10,-6,-10,-7"/>
             </Button>
+            <Rectangle Height="100" Stroke="Black" Width="100"/>
         </StackPanel>
         <StackPanel x:Name="HeavyArmsPanel" Grid.Row="2" Orientation="Horizontal" Visibility="Collapsed">
             <Button Height="60" VerticalAlignment="Top" Width="60">

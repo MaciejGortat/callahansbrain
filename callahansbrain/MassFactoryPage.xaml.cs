@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,19 +27,46 @@ namespace callahansbrain
 		{
 			this.InitializeComponent();
 		}
-		private void MainPageClick(object sender, RoutedEventArgs e)
+		#region Navigation event handling
+		private void TopLevelNav_Loaded(object sender, RoutedEventArgs e)
 		{
-			this.Frame.Navigate(typeof(MainPage));
-			//powrot
+			NavigationView nv = (NavigationView)sender;
+			//ustawianie domyslanego zaznaczenia
+			foreach (NavigationViewItemBase item in TopLevelNav.MenuItems)
+			{
+				if (item is NavigationViewItem && item.Tag.ToString() == this.GetType().Name.ToString())
+				{
+					TopLevelNav.SelectedItem = item;
+					//przypomnij mi zebym ci wytlumaczyl co tu sie dzieje, jak ogarniasz to usun ten komentarz
+					break;
+				}
+			}
+			nv.IsBackEnabled = Frame.CanGoBack;
 		}
-		private void FactoryClick(object sender, RoutedEventArgs e)
+		private void TopLevelNav_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
 		{
-			this.Frame.Navigate(typeof(FactoryPage));
-			//ustawia tryb Factory
+			NavigationViewItem Item = (NavigationViewItem)args.InvokedItemContainer;
+			string Tag = (string)Item.Tag;
+			Dictionary<string, Type> LookupDict = new Dictionary<string, Type>
+			{
+				{ "MainPage", typeof(MainPage) },
+				{ "FactoryPage", typeof(FactoryPage) },
+				{ "MassFactoryPage", typeof(MassFactoryPage) }
+			};
+			this.Frame.Navigate(LookupDict[Tag]);
 		}
+		private void TopLevelNav_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
+		{
+			if (Frame.CanGoBack)
+			{
+				Frame.GoBack();
+			}
+		}
+		#endregion
 		private void SmallArmsClick(object sender, RoutedEventArgs e)
 		{
 			Button b = (Button)sender;
+			b.Visibility = Visibility.Visible;
 			throw new NotImplementedException();
 			//wyswietla buttony od small armsow
 		}

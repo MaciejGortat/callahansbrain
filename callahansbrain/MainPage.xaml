@@ -11,11 +11,14 @@
     <Grid x:Name="main">
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
-
         </Grid.Background>
-
-        <TextBlock HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" VerticalAlignment="Top" Width="790"/>
-        <Button Content="Factory" Height="90" Margin="618,82,0,0" VerticalAlignment="Top" Width="178" Click="FactoryClick"/>
-        <Button Content="Mass Production Factory" Height="90" Margin="1194,82,0,0" VerticalAlignment="Top" Width="178" Click="MassFactoryClick"/>
+        <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Main" Tag="MainPage" />
+                <NavigationViewItem Content="Factory" Tag="FactoryPage" />
+                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+        <TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" Width="790"/>
     </Grid>
 </Page>
