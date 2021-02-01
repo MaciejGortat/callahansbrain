@@ -14,9 +14,9 @@
         </Grid.Background>
         <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
             <NavigationView.MenuItems>
-                <NavigationViewItem Content="Main" Tag="MainPage" />
-                <NavigationViewItem Content="Factory" Tag="FactoryPage" />
-                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage" />
+                <NavigationViewItem Content="Main" Tag="MainPage"/>
+                <NavigationViewItem Content="Factory" Tag="FactoryPage"/>
+                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage"/>
             </NavigationView.MenuItems>
         </NavigationView>
         <TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" Width="790"/>

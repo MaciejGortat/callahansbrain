@@ -44,27 +44,22 @@ namespace callahansbrain
 		private void SmallArmsClick(object sender, RoutedEventArgs e)
 		{
 			SmallArmsPanel.Visibility = Visibility.Visible;
-			//wyswietla buttony od small armsow
 		}
 		private void HeavyArmsClick(object sender, RoutedEventArgs e)
 		{
 			HeavyArmsPanel.Visibility = Visibility.Visible;
-			//wyswietla buttony od heavy armsow
 		}
 		private void UtilityClick(object sender, RoutedEventArgs e)
 		{
 			UtillityPanel.Visibility = Visibility.Visible;
-			//wyswietla buttony od heavy armsow
 		}
 		private void MedicalClick(object sender, RoutedEventArgs e)
 		{
-			MedicalPanel.Visibility = Visibility.Visible;
-			//wyswietla buttony od heavy armsow
+			MedicalPanel.Visibility = Visibility.Visible;	
 		}
 		private void SuppliesClick(object sender, RoutedEventArgs e)
 		{
-			SSPanel.Visibility = Visibility.Visible;
-			//wyswietla buttony od heavy armsow
+			SuppliesPanel.Visibility = Visibility.Visible;
 		}
 	}
 }

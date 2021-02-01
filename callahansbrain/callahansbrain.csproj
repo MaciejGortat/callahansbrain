@@ -119,9 +119,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="FactoryController.cs" />
+    <Compile Include="FactoryItem.cs" />
+    <Compile Include="FactoryOrder.cs" />
     <Compile Include="FactoryPage.xaml.cs">
       <DependentUpon>FactoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ItemCost.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

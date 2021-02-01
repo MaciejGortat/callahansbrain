@@ -31,7 +31,7 @@ namespace callahansbrain
 			}
 			nv.IsBackEnabled = page.Frame.CanGoBack;
 		}
-		public static void OnItemInvoked<T>(NavigationViewItemInvokedEventArgs args, T page) where T : Page
+		public static void OnItemInvoked(NavigationViewItemInvokedEventArgs args, Page page)
 		{
 			NavigationViewItem Item = (NavigationViewItem)args.InvokedItemContainer;
 			string Tag = (string)Item.Tag;
@@ -43,7 +43,7 @@ namespace callahansbrain
 			};
 			page.Frame.Navigate(LookupDict[Tag], null, new SuppressNavigationTransitionInfo());
 		}
-		public static void OnBackRequested<T>(T page) where T : Page
+		public static void OnBackRequested(Page page)
 		{
 			if (page.Frame.CanGoBack)
 			{
