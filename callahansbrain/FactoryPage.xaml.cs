@@ -23,6 +23,7 @@ namespace callahansbrain
 	/// </summary>
 	public sealed partial class FactoryPage : Page
 	{
+		private StackPanel activePanel;
 		public FactoryPage()
 		{
 			this.InitializeComponent();
@@ -41,25 +42,34 @@ namespace callahansbrain
 			TopLevelNavHandler.OnBackRequested(this);
 		}
 		#endregion
+		private void ChangeActivePanel(StackPanel newPanel)
+		{
+			if (activePanel != null)
+			{
+				activePanel.Visibility = Visibility.Collapsed;
+			}
+			activePanel = newPanel;
+			activePanel.Visibility = Visibility.Visible;
+		}
 		private void SmallArmsClick(object sender, RoutedEventArgs e)
 		{
-			SmallArmsPanel.Visibility = Visibility.Visible;
+			ChangeActivePanel(SmallArmsPanel);
 		}
 		private void HeavyArmsClick(object sender, RoutedEventArgs e)
 		{
-			HeavyArmsPanel.Visibility = Visibility.Visible;
+			ChangeActivePanel(HeavyArmsPanel);
 		}
 		private void UtilityClick(object sender, RoutedEventArgs e)
 		{
-			UtillityPanel.Visibility = Visibility.Visible;
+			ChangeActivePanel(UtillityPanel);
 		}
 		private void MedicalClick(object sender, RoutedEventArgs e)
 		{
-			MedicalPanel.Visibility = Visibility.Visible;	
+			ChangeActivePanel(MedicalPanel);
 		}
 		private void SuppliesClick(object sender, RoutedEventArgs e)
 		{
-			SuplyPanel.Visibility = Visibility.Visible;
+			ChangeActivePanel(SupliesPanel);
 		}
 	}
 }
