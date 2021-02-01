@@ -14,9 +14,9 @@
             <RowDefinition Height="150"/>
             <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
-        <!--<Grid.Background>
+        <Grid.Background>
             <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
-        </Grid.Background>-->
+        </Grid.Background>
         <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Main" Tag="MainPage" />
@@ -24,9 +24,7 @@
                 <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage" />
             </NavigationView.MenuItems>
         </NavigationView>
-        <!--<Button Content="Clear list" Height="32" Margin="1597,0,0,0" Width="243" Grid.Row="0"/>
-        <Button Content="Mass Production Factory" Height="100" Margin="1500,0,0,0"  Width="200" Click="MassFactoryClick" Grid.Row="1"/>
-        <Button Content="Main Page" Height="100"  Width="200" Margin="1700,0,0,0" Click="MainPageClick" Grid.Row="1"/>-->
+        <Button Content="Clear list" Height="32" Margin="1597,0,0,0" Width="243" Grid.Row="0"/>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" Width="790"/>
@@ -91,7 +89,7 @@
             </Button>
             <Rectangle Height="100" Stroke="Black" Width="100"/>
         </StackPanel>
-        <StackPanel x:Name="HeavyArmsPanel" Grid.Row="2" Orientation="Horizontal" Visibility="Collapsed">
+        <StackPanel x:Name="HeavyArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
             <Button Height="60" VerticalAlignment="Top" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/MG.png" Margin="-10,-6,-10,-7" />
             </Button>
@@ -160,7 +158,7 @@
             </Button>
             
         </StackPanel>
-        <StackPanel x:Name="UtillityPanel" Grid.Row="2" Orientation="Horizontal" Visibility="Collapsed">
+        <StackPanel x:Name="UtillityPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
             <Button Height="60" VerticalAlignment="Top" Width="60">
                 <Image Source="/Assets/Factory/UttilityFolder/Binoculars.png" Margin="-10,-6,-10,-7"/>
             </Button>
@@ -201,7 +199,7 @@
                 <Image Source="/Assets/Factory/UttilityFolder/shovel.png" Margin="-10,-6,-10,-7"/>
             </Button>
         </StackPanel>
-        <StackPanel x:Name="MedicalPanel" Grid.Row="2" Orientation="Horizontal" Visibility="Collapsed">
+        <StackPanel x:Name="MedicalPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
             <Button Height="60" VerticalAlignment="Top" Width="60">
                 <Image Source="/Assets/Factory/MedicalFolder/Bandages.png" Margin="-10,-6,-10,-7"/>
             </Button>
@@ -215,7 +213,7 @@
                 <Image Source="/Assets/Factory/MedicalFolder/trauma_kit.png" Margin="-10,-6,-10,-7"/>
             </Button>
         </StackPanel>
-        <StackPanel x:Name="SSPanel" Grid.Row="2" Orientation="Horizontal" Visibility="Collapsed">
+        <StackPanel x:Name="SSPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
             <Button Height="60" VerticalAlignment="Top" Width="60">
                 <Image Source="/Assets/Factory/SSfolder/ss.png" Margin="-10,-6,-10,-7"/>
             </Button>
