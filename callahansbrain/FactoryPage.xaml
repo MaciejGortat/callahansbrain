@@ -213,7 +213,7 @@
                 <Image Source="/Assets/Factory/MedicalFolder/trauma_kit.png" Margin="-10,-6,-10,-7"/>
             </Button>
         </StackPanel>
-        <StackPanel x:Name="SSPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
+        <StackPanel x:Name="SuplyPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
             <Button Height="60" VerticalAlignment="Top" Width="60">
                 <Image Source="/Assets/Factory/SSfolder/ss.png" Margin="-10,-6,-10,-7"/>
             </Button>

@@ -59,7 +59,7 @@ namespace callahansbrain
 		}
 		private void SuppliesClick(object sender, RoutedEventArgs e)
 		{
-			SuppliesPanel.Visibility = Visibility.Visible;
+			SuplyPanel.Visibility = Visibility.Visible;
 		}
 	}
 }
