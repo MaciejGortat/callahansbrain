@@ -150,6 +150,8 @@
     <Content Include="Assets\Factory\HeavyArmFolder\68mm.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\Anti-Tank_Rifle.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\150mm.png" />
+    <Content Include="Assets\Factory\HeavyArmFolder\ArtyAPS.png" />
+    <Content Include="Assets\Factory\HeavyArmFolder\ArtyHES.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\at_ammo.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\75mm.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\Green_Ash.png" />
@@ -158,8 +160,11 @@
     <Content Include="Assets\Factory\HeavyArmFolder\120mm.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\40mm.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\300mm.png" />
+    <Content Include="Assets\Factory\HeavyArmFolder\HowitzerShellSmoke.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\MG.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\Mortar.png" />
+    <Content Include="Assets\Factory\HeavyArmFolder\MortarShellFlare.png" />
+    <Content Include="Assets\Factory\HeavyArmFolder\MortarShellShrapnel.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\Mortar_Shell.png" />
     <Content Include="Assets\Factory\HeavyArmFolder\R.P.G..png" />
     <Content Include="Assets\Factory\HeavyArmFolder\warhead.png" />
