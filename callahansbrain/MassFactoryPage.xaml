@@ -1,40 +1,40 @@
 ﻿<Page
-    x:Class="callahansbrain.MassFactoryPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:callahansbrain"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	x:Class="callahansbrain.MassFactoryPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:callahansbrain"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="MassFactory">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="200"/>
-        </Grid.RowDefinitions>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
+	<Grid x:Name="MassFactory">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="50"/>
+			<RowDefinition Height="100"/>
+			<RowDefinition Height="150"/>
+			<RowDefinition Height="200"/>
+		</Grid.RowDefinitions>
+		<Grid.Background>
+			<ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
 
-        </Grid.Background>
-        <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
-            <NavigationView.MenuItems>
-                <NavigationViewItem Content="Main" Tag="MainPage"/>
-                <NavigationViewItem Content="Factory" Tag="FactoryPage"/>
-                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage"/>
-            </NavigationView.MenuItems>
-        </NavigationView>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <TextBlock Height="66" Width="790" Text="Callahan Brain made by Qache &amp; Mircin"/>
-            <TextBlock Height="50" Width="394" Text="MASS PRODUCTION FACTORY" Style="{StaticResource TitleTextBlockStyle}"/>
-        </StackPanel>
-        <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <Button Content="Vehicle Facillity" Height="102" Width="175"/>
-            <Button Content="Small Arms Facillity" Height="102" Width="175"/>
-            <Button Content="Heavy Arm Facillity" Height="102" Width="175"/>
-            <Button Content="Shippable Facillity" Height="102" Width="175"/>
-        </StackPanel>
-    </Grid>
+		</Grid.Background>
+		<NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
+			<NavigationView.MenuItems>
+				<NavigationViewItem Content="Main" Tag="MainPage"/>
+				<NavigationViewItem Content="Factory" Tag="FactoryPage"/>
+				<NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage"/>
+			</NavigationView.MenuItems>
+		</NavigationView>
+		<StackPanel Grid.Row="1" Orientation="Horizontal">
+			<TextBlock Height="66" Width="790" Text="Callahan Brain made by Qache &amp; Mircin"/>
+			<TextBlock Height="50" Width="394" Text="MASS PRODUCTION FACTORY" Style="{StaticResource TitleTextBlockStyle}"/>
+		</StackPanel>
+		<StackPanel Grid.Row="2" Orientation="Horizontal">
+			<Button Content="Vehicle Facillity" Height="102" Width="175"/>
+			<Button Content="Small Arms Facillity" Height="102" Width="175"/>
+			<Button Content="Heavy Arm Facillity" Height="102" Width="175"/>
+			<Button Content="Shippable Facillity" Height="102" Width="175"/>
+		</StackPanel>
+	</Grid>
 </Page>

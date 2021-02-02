@@ -1,24 +1,24 @@
 ﻿<Page
-    x:Class="callahansbrain.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:callahansbrain"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	x:Class="callahansbrain.MainPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:callahansbrain"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="main">
-        <Grid.Background>
-            <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
-        </Grid.Background>
-        <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
-            <NavigationView.MenuItems>
-                <NavigationViewItem Content="Main" Tag="MainPage"/>
-                <NavigationViewItem Content="Factory" Tag="FactoryPage"/>
-                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage"/>
-            </NavigationView.MenuItems>
-        </NavigationView>
-        <TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" Width="790"/>
-    </Grid>
+	<Grid x:Name="main">
+		<Grid.Background>
+			<ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
+		</Grid.Background>
+		<NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
+			<NavigationView.MenuItems>
+				<NavigationViewItem Content="Main" Tag="MainPage"/>
+				<NavigationViewItem Content="Factory" Tag="FactoryPage"/>
+				<NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage"/>
+			</NavigationView.MenuItems>
+		</NavigationView>
+		<TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" Width="790"/>
+	</Grid>
 </Page>

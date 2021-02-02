@@ -1,242 +1,242 @@
 ﻿<Page
-    x:Class="callahansbrain.FactoryPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:callahansbrain"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="200"/>
-        </Grid.RowDefinitions>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
-        </Grid.Background>
-        <NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
-            <NavigationView.MenuItems>
-                <NavigationViewItem Content="Main" Tag="MainPage" />
-                <NavigationViewItem Content="Factory" Tag="FactoryPage" />
-                <NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage" />
-            </NavigationView.MenuItems>
-        </NavigationView>
-        <Button Content="Clear list" Height="32" Margin="1597,0,0,0" Width="243" Grid.Row="0"/>
+	x:Class="callahansbrain.FactoryPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:callahansbrain"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Click="Item_Click" Tag="" Height="50"/>
+			<RowDefinition Click="Item_Click" Tag="" Height="100"/>
+			<RowDefinition Click="Item_Click" Tag="" Height="150"/>
+			<RowDefinition Click="Item_Click" Tag="" Height="200"/>
+		</Grid.RowDefinitions>
+		<Grid.Background>
+			<ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
+		</Grid.Background>
+		<NavigationView x:Name="TopLevelNav" PaneDisplayMode="Top" IsSettingsVisible="False" Loaded="TopLevelNav_Loaded" ItemInvoked="TopLevelNav_ItemInvoked" BackRequested="TopLevelNav_BackRequested">
+			<NavigationView.MenuItems>
+				<NavigationViewItem Content="Main" Tag="MainPage" />
+				<NavigationViewItem Content="Factory" Tag="FactoryPage" />
+				<NavigationViewItem Content="Mass Factory" Tag="MassFactoryPage" />
+			</NavigationView.MenuItems>
+		</NavigationView>
+		<!--TODO: clear button-->
+		<Button Content="Clear list" Height="32" Margin="1597,0,0,0" Width="243" Grid.Row="0"/>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" Width="790"/>
-            <TextBlock Height="50" Text="FACTORY" TextWrapping="Wrap" Width="175" Style="{StaticResource TitleTextBlockStyle}"/>
-        </StackPanel>
-        <StackPanel x:Name="FactoryPanel" Orientation="Horizontal" Grid.Row="2">
-            <Button Content="Small Arms Facillity" Height="100" Width="175" Click="SmallArmsClick"/>
-            <Button Content="Heavy Arms Facillity" Height="100" Width="175" Click="HeavyArmsClick"/>
-            <Button Content="Utillity Facillity" Height="100" Width="175" Click="UtilityClick"/>
-            <Button Content="Medical Facillity" Height="100" Width="175" Click="MedicalClick"/>
-            <Button Content="Supplies Facillity" Height="100" Width="175" Click="SuppliesClick"/>
-        </StackPanel>
+		<StackPanel Grid.Row="1" Orientation="Horizontal">
+			<TextBlock Height="66" Text="Callahan Brain made by Qache &amp; Mircin" TextWrapping="Wrap" Width="790"/>
+			<TextBlock Height="50" Text="FACTORY" TextWrapping="Wrap" Width="175" Style="{StaticResource TitleTextBlockStyle}"/>
+		</StackPanel>
+		<StackPanel x:Name="FactoryPanel" Orientation="Horizontal" Grid.Row="2">
+			<Button Content="Small Arms Facillity" Height="100" Width="175" Click="SmallArms_Click"/>
+			<Button Content="Heavy Arms Facillity" Height="100" Width="175" Click="HeavyArms_Click"/>
+			<Button Content="Utillity Facillity" Height="100" Width="175" Click="Utility_Click"/>
+			<Button Content="Medical Facillity" Height="100" Width="175" Click="Medical_Click"/>
+			<Button Content="Supplies Facillity" Height="100" Width="175" Click="Supplies_Click"/>
+		</StackPanel>
 
-        <StackPanel x:Name="SmallArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed" >
-            <Button Height="60" Width="60" >
-                <Image Source="/Assets/Factory/SmallArmsFolder/Revolver.png"/>
-            </Button>
-            <Button Height="60" Width="60" >
-                <Image Source="/Assets/Factory/SmallArmsFolder/44.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Rifle.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/762mm.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Carabine.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/7.62_Carbine.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Smg-1.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/9mm_SMG.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Shotgun.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Buckshot.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/StormRifle.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/7.92mmv1.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/SniperRifle.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/SniperRifleAmmo.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Smk_Grenade.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/LightMachineGun.png"/>
-            </Button>
-        </StackPanel>
-        <StackPanel x:Name="HeavyArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/MG.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/127mm.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Mortar.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Mortar_Shell.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/MortarShellFlare.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/MortarShellShrapnel.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Green_Ash.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/R.P.G..png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/RPG_Shell_.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Sticky_Bomb.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/HE_Grenade.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/grenade.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/14.5mm.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/anti-tank_rifle.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/at_ammo.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/55mm.png" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/68mm.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/150mm.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/ArtyAPS.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/ArtyHES.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/120mm.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/HowitzerShellSmoke.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/40mm.png" Margin="-10,-6,-10,-7" />
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/75mm.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/250mm.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/warhead.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/300mm.png"/>
-            </Button>
-            
-        </StackPanel>
-        <StackPanel x:Name="UtillityPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/Binoculars.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/gas_mask.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/filter.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/wrench.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/radio.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/radio_backpacks.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/bayonet.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/adapter.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/saTchel.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/sledge_hammer.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/land_mine.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/rocketbooster.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/shovel.png"/>
-            </Button>
-        </StackPanel>
-        <StackPanel x:Name="MedicalPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/Bandages.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/first_aid_kit.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/bloodplasma.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/trauma_kit.png"/>
-            </Button>
-        </StackPanel>
-        <StackPanel x:Name="SupliesPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SSfolder/ss.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SSfolder/gs.png"/>
-            </Button>
-            <Button Height="60" Width="60">
-                <Image Source="/Assets/Factory/SSfolder/bs.png"/>
-            </Button>
-        </StackPanel>
-    </Grid>
+		<StackPanel x:Name="SmallArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed" >
+			<Button Click="Item_Click" Tag="Revolver" Height="60" Width="60" >
+				<Image Source="/Assets/Factory/SmallArmsFolder/Revolver.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Revolver_ammo" Height="60" Width="60" >
+				<Image Source="/Assets/Factory/SmallArmsFolder/44.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Rifle" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/Rifle.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Rifle_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/762mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Carabine" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/Carabine.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Carabine_ammmo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/7.62_Carbine.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="SMG" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/Smg-1.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="SMG_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/9mm_SMG.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Shotgun" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/Shotgun.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Shotgun_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/Buckshot.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Storm_rifle" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/StormRifle.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Storm_rifle_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/7.92mmv1.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Sniper" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/SniperRifle.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Sniper_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/SniperRifleAmmo.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Smoke" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/Smk_Grenade.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="LMG" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SmallArmsFolder/LightMachineGun.png"/>
+			</Button>
+		</StackPanel>
+		<StackPanel x:Name="HeavyArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
+			<Button Click="Item_Click" Tag="HMG" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/MG.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="HMG_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/127mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Mortar" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/Mortar.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Mortar_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/Mortar_Shell.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Mortar_shrapnel_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/MortarShellFlare.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Mortar_flare_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/MortarShellShrapnel.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Green_ash" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/Green_Ash.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="RPG" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/R.P.G..png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="RPG_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/RPG_Shell_.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Sticky_bomb" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/Sticky_Bomb.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="HE_grenade" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/HE_Grenade.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Frag_grenade" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/grenade.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Fmg_14_5mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/14.5mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="AT_rifle" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/anti-tank_rifle.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="AT_rifle_ammo" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/at_ammo.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="GB_55mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/55mm.png" />
+			</Button>
+			<Button Click="Item_Click" Tag="AT_68mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/68mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="FA_150mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/150mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="FA_AT_150mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/ArtyAPS.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="FA_HE_150mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/ArtyHES.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/120mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/HowitzerShellSmoke.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="LT_40mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/40mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="BT_75mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/75mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Siege_tank_250mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/250mm.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="Warhead" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/warhead.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="SC_300mm" Height="60" Width="60">
+				<Image Source="/Assets/Factory/HeavyArmFolder/300mm.png"/>
+			</Button>
+		</StackPanel>
+		<StackPanel x:Name="UtillityPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/Binoculars.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/gas_mask.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/filter.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/wrench.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/radio.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/radio_backpacks.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/bayonet.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/adapter.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/saTchel.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/sledge_hammer.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/land_mine.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/rocketbooster.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/UttilityFolder/shovel.png"/>
+			</Button>
+		</StackPanel>
+		<StackPanel x:Name="MedicalPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/MedicalFolder/Bandages.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/MedicalFolder/first_aid_kit.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/MedicalFolder/bloodplasma.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/MedicalFolder/trauma_kit.png"/>
+			</Button>
+		</StackPanel>
+		<StackPanel x:Name="SupliesPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SSfolder/ss.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SSfolder/gs.png"/>
+			</Button>
+			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+				<Image Source="/Assets/Factory/SSfolder/bs.png"/>
+			</Button>
+		</StackPanel>
+	</Grid>
 </Page>

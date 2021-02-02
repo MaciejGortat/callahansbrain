@@ -51,25 +51,30 @@ namespace callahansbrain
 			activePanel = newPanel;
 			activePanel.Visibility = Visibility.Visible;
 		}
-		private void SmallArmsClick(object sender, RoutedEventArgs e)
+		private void SmallArms_Click(object sender, RoutedEventArgs e)
 		{
 			ChangeActivePanel(SmallArmsPanel);
 		}
-		private void HeavyArmsClick(object sender, RoutedEventArgs e)
+		private void HeavyArms_Click(object sender, RoutedEventArgs e)
 		{
 			ChangeActivePanel(HeavyArmsPanel);
 		}
-		private void UtilityClick(object sender, RoutedEventArgs e)
+		private void Utility_Click(object sender, RoutedEventArgs e)
 		{
 			ChangeActivePanel(UtillityPanel);
 		}
-		private void MedicalClick(object sender, RoutedEventArgs e)
+		private void Medical_Click(object sender, RoutedEventArgs e)
 		{
 			ChangeActivePanel(MedicalPanel);
 		}
-		private void SuppliesClick(object sender, RoutedEventArgs e)
+		private void Supplies_Click(object sender, RoutedEventArgs e)
 		{
 			ChangeActivePanel(SupliesPanel);
+		}
+		private void Item_Click(object sender, RoutedEventArgs e)
+		{
+			Button button = (Button)sender;
+			ItemType itemType = ItemType.Parse<ItemType>(button.Tag.ToString());
 		}
 	}
 }
