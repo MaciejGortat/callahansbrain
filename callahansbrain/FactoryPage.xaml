@@ -39,189 +39,189 @@
         </StackPanel>
 
         <StackPanel x:Name="SmallArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed" >
-            <Button Height="60"  VerticalAlignment="Top" Width="60" >
-                <Image Source="/Assets/Factory/SmallArmsFolder/Revolver.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60" >
+                <Image Source="/Assets/Factory/SmallArmsFolder/Revolver.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60" >
-                <Image Source="/Assets/Factory/SmallArmsFolder/44.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60" >
+                <Image Source="/Assets/Factory/SmallArmsFolder/44.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Rifle.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/Rifle.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/762mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/762mm.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Carabine.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/Carabine.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/7.62_Carbine.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/7.62_Carbine.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Smg-1.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/Smg-1.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/9mm_SMG.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/9mm_SMG.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Shotgun.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/Shotgun.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Buckshot.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/Buckshot.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/StormRifle.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/StormRifle.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/7.92mmv1.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/7.92mmv1.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/SniperRifle.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/SniperRifle.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/SniperRifleAmmo.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/SniperRifleAmmo.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/Smk_Grenade.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/Smk_Grenade.png"/>
             </Button>
-            <Button Height="60"  VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SmallArmsFolder/LightMachineGun.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SmallArmsFolder/LightMachineGun.png"/>
             </Button>
             <Rectangle Height="100" Stroke="Black" Width="100"/>
         </StackPanel>
         <StackPanel x:Name="HeavyArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/MG.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/MG.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/127mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/127mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Mortar.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/Mortar.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Mortar_Shell.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/Mortar_Shell.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Green_Ash.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/Green_Ash.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/R.P.G..png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/R.P.G..png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/RPG_Shell_.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/RPG_Shell_.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/Sticky_Bomb.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/Sticky_Bomb.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/HE_Grenade.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/HE_Grenade.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/grenade.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/grenade.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/14.5mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/14.5mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/anti-tank_rifle.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/anti-tank_rifle.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/at_ammo.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/at_ammo.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/55mm.png" />
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/68mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/68mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/150mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/150mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/120mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/120mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/40mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/40mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/75mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/75mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/250mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/250mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/warhead.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/warhead.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/HeavyArmFolder/300mm.png" Margin="-10,-6,-10,-7" />
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/300mm.png"/>
             </Button>
             
         </StackPanel>
         <StackPanel x:Name="UtillityPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/Binoculars.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/Binoculars.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/gas_mask.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/gas_mask.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/filter.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/filter.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/wrench.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/wrench.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/radio.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/radio.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/radio_backpacks.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/radio_backpacks.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/bayonet.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/bayonet.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/adapter.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/adapter.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/saTchel.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/saTchel.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/sledge_hammer.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/sledge_hammer.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/land_mine.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/land_mine.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/rocketbooster.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/rocketbooster.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/UttilityFolder/shovel.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/UttilityFolder/shovel.png"/>
             </Button>
         </StackPanel>
         <StackPanel x:Name="MedicalPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/Bandages.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/MedicalFolder/Bandages.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/first_aid_kit.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/MedicalFolder/first_aid_kit.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/bloodplasma.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/MedicalFolder/bloodplasma.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/MedicalFolder/trauma_kit.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/MedicalFolder/trauma_kit.png"/>
             </Button>
         </StackPanel>
         <StackPanel x:Name="SupliesPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SSfolder/ss.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SSfolder/ss.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SSfolder/gs.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SSfolder/gs.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
-                <Image Source="/Assets/Factory/SSfolder/bs.png" Margin="-10,-6,-10,-7"/>
+            <Button Height="60" Width="60">
+                <Image Source="/Assets/Factory/SSfolder/bs.png"/>
             </Button>
         </StackPanel>
     </Grid>
