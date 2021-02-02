@@ -87,7 +87,6 @@
             <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/SmallArmsFolder/LightMachineGun.png"/>
             </Button>
-            <Rectangle Height="100" Stroke="Black" Width="100"/>
         </StackPanel>
         <StackPanel x:Name="HeavyArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
             <Button Height="60" Width="60">
@@ -102,13 +101,13 @@
             <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/Mortar_Shell.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/MortarShellFlare.png" Margin="-10,-6,-10,-7" />
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/MortarShellShrapnel.png" Margin="-10,-6,-10,-7" />
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/Green_Ash.png" Margin="-10,-6,-10,-7" />
             </Button>
             <Button Height="60" Width="60">
@@ -144,19 +143,19 @@
             <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/150mm.png"/>
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/ArtyAPS.png" Margin="-10,-6,-10,-7" />
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/ArtyHES.png" Margin="-10,-6,-10,-7" />
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/120mm.png" Margin="-10,-6,-10,-7" />
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/HowitzerShellSmoke.png" Margin="-10,-6,-10,-7" />
             </Button>
-            <Button Height="60" VerticalAlignment="Top" Width="60">
+            <Button Height="60" Width="60">
                 <Image Source="/Assets/Factory/HeavyArmFolder/40mm.png" Margin="-10,-6,-10,-7" />
             </Button>
             <Button Height="60" Width="60">
