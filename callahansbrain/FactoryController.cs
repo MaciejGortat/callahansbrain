@@ -18,7 +18,6 @@ namespace callahansbrain
 {
 	class FactoryController
 	{
-		private FactoryController(){}
 		private static FactoryController instance = null;
 		public static FactoryController Instance
 		{
@@ -31,6 +30,15 @@ namespace callahansbrain
 				return instance;
 			}
 		}
-		public Facility SelectedFacility{ get; private set; }
+
+		private DataStorage dataStorage = new DataStorage();
+		private FactoryController()
+		{
+			dataStorage.items.Add(new FactoryItem(ItemType.AT_rifle, new ItemCost(0, 100, 20, 0)));
+			dataStorage.items.Add(new FactoryItem(ItemType.Carabine_ammmo , new ItemCost(60, 0, 0, 0)));
+			dataStorage.items.Add(new FactoryItem(ItemType.Mortar, new ItemCost(0, 0, 20, 600)));
+			dataStorage.Serialize();
+		}
+		public void DoNothing() { }
 	}
 }

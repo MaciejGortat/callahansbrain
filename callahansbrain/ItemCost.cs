@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace callahansbrain
 {
-	class ItemCost
+	public class ItemCost
 	{
 		public int Bmats { get; private set; }
 		public int Emats { get; private set; }

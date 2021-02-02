@@ -1,9 +1,11 @@
-﻿namespace callahansbrain
+﻿using System;
+
+namespace callahansbrain
 {
-	class FactoryItem
+	[Serializable]
+	public class FactoryItem
 	{
 		private static int counter;
-
 		public ItemType ItemIdentifier { get; private set; }
 		public int UniqueIndentifier { get; private set; }
 

@@ -27,6 +27,7 @@ namespace callahansbrain
 		public FactoryPage()
 		{
 			this.InitializeComponent();
+			FactoryController.Instance.DoNothing();
 		}
 		#region Navigation event handling
 		private void TopLevelNav_Loaded(object sender, RoutedEventArgs e)
@@ -42,15 +43,6 @@ namespace callahansbrain
 			TopLevelNavHandler.OnBackRequested(this);
 		}
 		#endregion
-		private void ChangeActivePanel(StackPanel newPanel)
-		{
-			if (activePanel != null)
-			{
-				activePanel.Visibility = Visibility.Collapsed;
-			}
-			activePanel = newPanel;
-			activePanel.Visibility = Visibility.Visible;
-		}
 		private void SmallArms_Click(object sender, RoutedEventArgs e)
 		{
 			ChangeActivePanel(SmallArmsPanel);
@@ -71,10 +63,33 @@ namespace callahansbrain
 		{
 			ChangeActivePanel(SupliesPanel);
 		}
+		private void ChangeActivePanel(StackPanel newPanel)
+		{
+			if (activePanel != null)
+			{
+				activePanel.Visibility = Visibility.Collapsed;
+			}
+			activePanel = newPanel;
+			activePanel.Visibility = Visibility.Visible;
+		}
 		private void Item_Click(object sender, RoutedEventArgs e)
 		{
 			Button button = (Button)sender;
-			ItemType itemType = ItemType.Parse<ItemType>(button.Tag.ToString());
+			if (button.Tag != null && button.Tag.ToString() != string.Empty)
+			{
+				try
+				{
+					ItemType itemType = Enum.Parse<ItemType>(button.Tag.ToString());
+
+				}
+				catch (Exception exception)
+				{
+					Debug.WriteLine("[Error] {0}", exception.ToString());
+				}
+			} else
+			{
+				Debug.WriteLine("[Error] Wrong button tag in FactoryPage!");
+			}
 		}
 	}
 }

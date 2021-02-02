@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataStorage.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="FactoryController.cs" />
     <Compile Include="FactoryItem.cs" />
@@ -237,6 +238,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>5.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />

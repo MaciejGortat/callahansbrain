@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace callahansbrain
 {
-	class FactoryOrder
+	public class FactoryOrder
 	{
 		private static int counter;
 		private List<FactoryItem> items;
