@@ -9,10 +9,10 @@
 	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 	<Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Click="Item_Click" Tag="" Height="50"/>
-			<RowDefinition Click="Item_Click" Tag="" Height="100"/>
-			<RowDefinition Click="Item_Click" Tag="" Height="150"/>
-			<RowDefinition Click="Item_Click" Tag="" Height="200"/>
+			<RowDefinition Height="50"/>
+			<RowDefinition Height="100"/>
+			<RowDefinition Height="150"/>
+			<RowDefinition Height="200"/>
 		</Grid.RowDefinitions>
 		<Grid.Background>
 			<ImageBrush ImageSource="/Assets/emothic_commission_FULL.png"/>
