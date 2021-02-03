@@ -1,0 +1,32 @@
+[
+  {
+    "itemIdentifier": 30,
+    "uniqueIndentifier": 0,
+    "cost": {
+      "Bmats": 0,
+      "Emats": 100,
+      "Rmats": 20,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 6,
+    "uniqueIndentifier": 1,
+    "cost": {
+      "Bmats": 60,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 19,
+    "uniqueIndentifier": 2,
+    "cost": {
+      "Bmats": 0,
+      "Emats": 0,
+      "Rmats": 20,
+      "Hmats": 600
+    }
+  }
+]

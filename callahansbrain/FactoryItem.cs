@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace callahansbrain
 {
@@ -6,16 +8,18 @@ namespace callahansbrain
 	public class FactoryItem
 	{
 		private static int counter;
-		public ItemType ItemIdentifier { get; private set; }
-		public int UniqueIndentifier { get; private set; }
-
-		public ItemCost Cost { get; private set; }
+		[JsonInclude]
+		public ItemType itemIdentifier;
+		[JsonInclude]
+		public int uniqueIndentifier;
+		[JsonInclude]
+		public ItemCost cost;
 
 		public FactoryItem(ItemType itemIdentifier, ItemCost cost)
 		{
-			UniqueIndentifier = counter++;
-			ItemIdentifier = itemIdentifier;
-			Cost = cost;
+			uniqueIndentifier = counter++;
+			this.itemIdentifier = itemIdentifier;
+			this.cost = cost;
 		}
 	}
 }

@@ -34,11 +34,14 @@ namespace callahansbrain
 		private DataStorage dataStorage = new DataStorage();
 		private FactoryController()
 		{
-			dataStorage.items.Add(new FactoryItem(ItemType.AT_rifle, new ItemCost(0, 100, 20, 0)));
-			dataStorage.items.Add(new FactoryItem(ItemType.Carabine_ammmo , new ItemCost(60, 0, 0, 0)));
-			dataStorage.items.Add(new FactoryItem(ItemType.Mortar, new ItemCost(0, 0, 20, 600)));
-			dataStorage.Serialize();
 		}
-		public void DoNothing() { }
+		public async Task LoadData()
+		{
+			await dataStorage.Deserialize();
+			foreach (FactoryItem item in dataStorage.items)
+			{
+				Debug.WriteLine(item.itemIdentifier.ToString());
+			}
+		}
 	}
 }

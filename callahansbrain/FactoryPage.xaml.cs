@@ -26,8 +26,7 @@ namespace callahansbrain
 		private StackPanel activePanel;
 		public FactoryPage()
 		{
-			this.InitializeComponent();
-			FactoryController.Instance.DoNothing();
+			InitializeComponent();
 		}
 		#region Navigation event handling
 		private void TopLevelNav_Loaded(object sender, RoutedEventArgs e)

@@ -18,16 +18,16 @@ namespace callahansbrain
 		//pobranie sciezki do folderu lokalnego
 		private StorageFolder localFolder = ApplicationData.Current.LocalFolder;
 		//asynchroniczna serializacja danych z pola items
-		public async void Serialize()
+		public async Task Serialize()
 		{
 			//asynchroniczna proba stworzenia pliku w folderze lokalnym aplikacji, jak istnieje to otwiera istniejacy
 			StorageFile dataFile = await localFolder.CreateFileAsync("dataFile.json",
 				CreationCollisionOption.OpenIfExists);
 			//wykonaj serializacje z uzyciem strumienia danych z wczesniej otwartego pliku
 			//OpenAsync() zwraca nam operacje z typem generycznym, ktory nas interesuje IAsyncOperation<IRandomAccessStream>
-			//await obsluguje IAsyncOperation<IRandomAccessStream>, czeka az operacja zostanie wykonana i zwraca IRandomAccessStream
+			//ale my potrzebujemy tylko tego typu IRandomAccessStream, dlatego GetResults()
 			//ale my potrzebujemy strumienia Stream, dlatego AsStream(), ktore zamienia IRandomAccessStream na Stream
-			//zeby wyczaic jak to dziala siedzialem 2 godziny w dokumentacji, sam w zyciu bym nie wpadl jak to napisac
+			//zeby wyczaic jak to dziala siedzialem 3 godziny w dokumentacji, sam w zyciu bym nie wpadl jak to napisac
 			//prawdopodobnie da sie prosciej, jak na cos wpadne kiedys to poprawie, albo ty popraw
 			using (Stream stream = (await dataFile.OpenAsync(FileAccessMode.ReadWrite)).AsStream())
 			{
@@ -38,21 +38,11 @@ namespace callahansbrain
 		}
 		public async Task Deserialize()
 		{
-			try
+			//asynchroniczne otwieranie jsona z assetow
+			StorageFile dataFile = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/dataFile.json"));
+			using (Stream stream = (await dataFile.OpenAsync(FileAccessMode.Read)).AsStream())
 			{
-				StorageFile sampleFile = await localFolder.GetFileAsync("dataFile.json");
-				using (FileStream stream = (FileStream)sampleFile.OpenAsync(FileAccessMode.Read))
-				{
-					items = JsonSerializer.DeserializeAsync<List<FactoryItem>>(stream).Result;
-				}
-			}
-			catch (FileNotFoundException e)
-			{
-				Debug.WriteLine("[Error] FileNotFoundException source: {0}", e.Source);
-			}
-			catch (IOException e)
-			{
-				Debug.WriteLine("[Error] IOException source: {0}", e.Source);
+				items = (await JsonSerializer.DeserializeAsync<List<FactoryItem>>(stream));
 			}
 		}
 	}

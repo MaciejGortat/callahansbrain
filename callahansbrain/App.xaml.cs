@@ -71,6 +71,7 @@ namespace callahansbrain
                 // Ensure the current window is active
                 Window.Current.Activate();
             }
+            _ = FactoryController.Instance.LoadData();
         }
 
         /// <summary>

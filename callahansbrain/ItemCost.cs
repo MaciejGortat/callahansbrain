@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace callahansbrain
 {
 	public class ItemCost
 	{
-		public int Bmats { get; private set; }
-		public int Emats { get; private set; }
-		public int Rmats { get; private set; }
-		public int Hmats { get; private set; }
+		[JsonInclude]
+		public int Bmats { get; set; }
+		[JsonInclude]
+		public int Emats { get; set; }
+		[JsonInclude]
+		public int Rmats { get; set; }
+		[JsonInclude]
+		public int Hmats { get; set; }
 
 		public ItemCost(int bmats, int emats = 0, int rmats = 0, int hmats = 0)
 		{
