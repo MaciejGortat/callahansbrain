@@ -25,11 +25,11 @@ namespace callahansbrain
 				CreationCollisionOption.OpenIfExists);
 			//wykonaj serializacje z uzyciem strumienia danych z wczesniej otwartego pliku
 			//OpenAsync() zwraca nam operacje z typem generycznym, ktory nas interesuje IAsyncOperation<IRandomAccessStream>
-			//ale my potrzebujemy tylko tego typu IRandomAccessStream, dlatego GetResults()
+			//await obsluguje IAsyncOperation<IRandomAccessStream>, czeka az operacja zostanie wykonana i zwraca IRandomAccessStream
 			//ale my potrzebujemy strumienia Stream, dlatego AsStream(), ktore zamienia IRandomAccessStream na Stream
 			//zeby wyczaic jak to dziala siedzialem 2 godziny w dokumentacji, sam w zyciu bym nie wpadl jak to napisac
 			//prawdopodobnie da sie prosciej, jak na cos wpadne kiedys to poprawie, albo ty popraw
-			using (Stream stream = dataFile.OpenAsync(FileAccessMode.ReadWrite).GetResults().AsStream())
+			using (Stream stream = (await dataFile.OpenAsync(FileAccessMode.ReadWrite)).AsStream())
 			{
 				//wykonanie serializacji i wyslanie tego do strumienia, tez asynchronicznie
 				//dodatkowa opcja WriteIndented zapisuje w czytelnej postaci, bez tego byloby wszystko w jednej linii
