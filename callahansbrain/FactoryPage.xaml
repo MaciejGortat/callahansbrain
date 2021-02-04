@@ -91,10 +91,10 @@
 		</StackPanel>
 		<StackPanel x:Name="HeavyArmsPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
 			<Button Click="Item_Click" Tag="HMG" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/MG.png"/>
+				<Image Source="/Assets/Factory/HeavyArmFolder/HMG.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="HMG_ammo" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/127mm.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/HMG_ammo.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="Mortar" Height="60" Width="60">
 				<Image Source="/Assets/Factory/HeavyArmFolder/Mortar.png"/>
@@ -112,7 +112,7 @@
 				<Image Source="/Assets/Factory/HeavyArmFolder/Green_Ash.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="RPG" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/R.P.G..png"/>
+				<Image Source="/Assets/Factory/HeavyArmFolder/RPG.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="RPG_ammo" Height="60" Width="60">
 				<Image Source="/Assets/Factory/HeavyArmFolder/RPG_Shell_.png"/>
@@ -127,49 +127,49 @@
 				<Image Source="/Assets/Factory/HeavyArmFolder/grenade.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="Fmg_14_5mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/14.5mm.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/Fmg_14_5mm.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="AT_rifle" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/anti-tank_rifle.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/AT_rifle.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="AT_rifle_ammo" Height="60" Width="60">
 				<Image Source="/Assets/Factory/HeavyArmFolder/at_ammo.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="GB_55mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/55mm.png" />
+                <Image Source="/Assets/Factory/HeavyArmFolder/GB_55mm.png" />
 			</Button>
 			<Button Click="Item_Click" Tag="AT_68mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/68mm.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/AT_68mm.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="FA_150mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/150mm.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/FA_150mm.png"/>
 			</Button>
-			<Button Click="Item_Click" Tag="FA_AT_150mm" Height="60" Width="60">
+            <Button Click="Item_Click" Tag="ArtyAPS" Height="60" Width="60">
 				<Image Source="/Assets/Factory/HeavyArmFolder/ArtyAPS.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="FA_HE_150mm" Height="60" Width="60">
 				<Image Source="/Assets/Factory/HeavyArmFolder/ArtyHES.png"/>
 			</Button>
-			<Button Click="Item_Click" Tag="" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/120mm.png"/>
+            <Button Click="Item_Click" Tag="hotwizer_120mm" Height="60" Width="60">
+                <Image Source="/Assets/Factory/HeavyArmFolder/hotwizer_120mm.png"/>
 			</Button>
-			<Button Click="Item_Click" Tag="" Height="60" Width="60">
+            <Button Click="Item_Click" Tag="HowitzerShellSmoke" Height="60" Width="60">
 				<Image Source="/Assets/Factory/HeavyArmFolder/HowitzerShellSmoke.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="LT_40mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/40mm.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/LT_40mm.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="BT_75mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/75mm.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/BT_75mm.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="Siege_tank_250mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/250mm.png"/>
+                <Image Source="/Assets/Factory/HeavyArmFolder/Siege_tank_250mm.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="Warhead" Height="60" Width="60">
 				<Image Source="/Assets/Factory/HeavyArmFolder/warhead.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="SC_300mm" Height="60" Width="60">
-				<Image Source="/Assets/Factory/HeavyArmFolder/300mm.png"/>
+				<Image Source="/Assets/Factory/HeavyArmFolder/SC_300mm.png"/>
 			</Button>
 		</StackPanel>
 		<StackPanel x:Name="UtillityPanel" Grid.Row="3" Orientation="Horizontal" Visibility="Collapsed">
@@ -195,7 +195,7 @@
 				<Image Source="/Assets/Factory/UttilityFolder/bayonet.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="" Height="60" Width="60">
-				<Image Source="/Assets/Factory/UttilityFolder/adapter.png"/>
+                <Image Source="/Assets/Factory/UttilityFolder/Grenade_Launcher.png"/>
 			</Button>
 			<Button Click="Item_Click" Tag="" Height="60" Width="60">
 				<Image Source="/Assets/Factory/UttilityFolder/saTchel.png"/>
