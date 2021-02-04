@@ -42,6 +42,28 @@
 	Siege_tank_250mm		= 39,
 	Warhead					= 40,
 	SC_300mm				= 41,
+	Binoculars=42,
+	Gas_Mask=43,
+	Gas_Mask_Filter=44,
+	Wrench=45,
+	Radio=46,
+	Radio_Backpack=47,
+	Bayonet=48,
+	Grenade_Launcher=49,
+	Satchel_Charge=50,
+	Sledge_Hammer=51,
+	at_mine=52,
+	Rocket_Booster = 53,
+	Shovel=54,
+	Bandages=55,
+	First_Aid_Kit =56,
+	Blood_Plasma = 57,
+	Trauma_Kit = 58,
+	ss=59,
+	gs=60,
+	bs=61
+	
+
 }
 public enum Facility
 {
