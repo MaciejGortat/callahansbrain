@@ -14,7 +14,6 @@ namespace callahansbrain
 		public int uniqueIndentifier;
 		[JsonInclude]
 		public ItemCost cost;
-
 		public FactoryItem(ItemType itemIdentifier, ItemCost cost)
 		{
 			uniqueIndentifier = counter++;

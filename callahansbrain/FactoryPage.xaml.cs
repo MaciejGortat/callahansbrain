@@ -79,7 +79,6 @@ namespace callahansbrain
 				try
 				{
 					ItemType itemType = Enum.Parse<ItemType>(button.Tag.ToString());
-
 				}
 				catch (Exception exception)
 				{

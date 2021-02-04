@@ -40,6 +40,7 @@ namespace callahansbrain
 		{
 			//asynchroniczne otwieranie jsona z assetow
 			StorageFile dataFile = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/dataFile.json"));
+			//tym razem potrzebujemy tylko odczyt z pliku, a plik pobieramy z assetow
 			using (Stream stream = (await dataFile.OpenAsync(FileAccessMode.Read)).AsStream())
 			{
 				items = (await JsonSerializer.DeserializeAsync<List<FactoryItem>>(stream));
