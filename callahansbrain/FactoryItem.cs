@@ -7,16 +7,14 @@ namespace callahansbrain
 	[Serializable]
 	public class FactoryItem
 	{
-		private static int counter;
 		[JsonInclude]
 		public ItemType itemIdentifier;
 		[JsonInclude]
-		public int uniqueIndentifier;
+		public int time;
 		[JsonInclude]
-		public ItemCost cost;
+		public ItemCost cost;		
 		public FactoryItem(ItemType itemIdentifier, ItemCost cost)
 		{
-			uniqueIndentifier = counter++;
 			this.itemIdentifier = itemIdentifier;
 			this.cost = cost;
 		}
