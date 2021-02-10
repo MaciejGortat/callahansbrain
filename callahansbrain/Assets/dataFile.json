@@ -1,17 +1,7 @@
 [
   {
-    "itemIdentifier": 30,
-    "time": 0,
-    "cost": {
-      "Bmats": 0,
-      "Emats": 100,
-      "Rmats": 20,
-      "Hmats": 0
-    }
-  },
-  {
-    "itemIdentifier": 6,
-    "time": 0,
+    "itemIdentifier": 1,
+    "time": 50,
     "cost": {
       "Bmats": 60,
       "Emats": 0,
@@ -20,13 +10,603 @@
     }
   },
   {
-    "itemIdentifier": 19,
-    "time": 0,
+    "itemIdentifier": 2,
+    "time": 40,
+    "cost": {
+      "Bmats": 40,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 3,
+    "time": 70,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 4,
+    "time": 50,
+    "cost": {
+      "Bmats": 80,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 5,
+    "time": 80,
+    "cost": {
+      "Bmats": 140,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 6,
+    "time": 50,
+    "cost": {
+      "Bmats": 80,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 7,
+    "time": 80,
+    "cost": {
+      "Bmats": 120,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 8,
+    "time": 50,
+    "cost": {
+      "Bmats": 80,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 9,
+    "time": 80,
+    "cost": {
+      "Bmats": 120,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 10,
+    "time": 50,
+    "cost": {
+      "Bmats": 80,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 11,
+    "time": 100,
+    "cost": {
+      "Bmats": 165,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 12,
+    "time": 60,
+    "cost": {
+      "Bmats": 120,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 13,
+    "time": 125,
+    "cost": {
+      "Bmats": 200,
+      "Emats": 0,
+      "Rmats": 15,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 14,
+    "time": 100,
+    "cost": {
+      "Bmats": 150,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 15,
+    "time": 75,
+    "cost": {
+      "Bmats": 120,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 16,
+    "time": 100,
+    "cost": {
+      "Bmats": 165,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 17,
+    "time": 100,
     "cost": {
       "Bmats": 0,
       "Emats": 0,
-      "Rmats": 20,
-      "Hmats": 600
+      "Rmats": 30,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 18,
+    "time": 70,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 19,
+    "time": 50,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 25,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 20,
+    "time": 112,
+    "cost": {
+      "Bmats": 60,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 15
+    }
+  },
+  {
+    "itemIdentifier": 21,
+    "time": 112,
+    "cost": {
+      "Bmats": 90,
+      "Emats": 30,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 22,
+    "time": 112,
+    "cost": {
+      "Bmats": 60,
+      "Emats": 15,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 23,
+    "time": 100,
+    "cost": {
+      "Bmats": 140,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 24,
+    "time": 50,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 25,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 25,
+    "time": 112,
+    "cost": {
+      "Bmats": 60,
+      "Emats": 75,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 26,
+    "time": 75,
+    "cost": {
+      "Bmats": 50,
+      "Emats": 50,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 27,
+    "time": 80,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 10,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 28,
+    "time": 100,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 20,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 29,
+    "time": 100,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 30,
+    "time": 37,
+    "cost": {
+      "Bmats": 150,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 31,
+    "time": 100,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 32,
+    "time": 200,
+    "cost": {
+      "Bmats": 160,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 40
+    }
+  },
+  {
+    "itemIdentifier": 33,
+    "time": 200,
+    "cost": {
+      "Bmats": 120,
+      "Emats": 120,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 34,
+    "time": 200,
+    "cost": {
+      "Bmats": 200,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 100
+    }
+  },
+  {
+    "itemIdentifier": 35,
+    "time": 200,
+    "cost": {
+      "Bmats": 200,
+      "Emats": 0,
+      "Rmats": 200,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 36,
+    "time": 200,
+    "cost": {
+      "Bmats": 200,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 200
+    }
+  },
+  {
+    "itemIdentifier": 37,
+    "time": 200,
+    "cost": {
+      "Bmats": 160,
+      "Emats": 120,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 38,
+    "time": 200,
+    "cost": {
+      "Bmats": 200,
+      "Emats": 400,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 39,
+    "time": 150,
+    "cost": {
+      "Bmats": 120,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 30
+    }
+  },
+  {
+    "itemIdentifier": 40,
+    "time": 600,
+    "cost": {
+      "Bmats": 0,
+      "Emats": 0,
+      "Rmats": 200,
+      "Hmats": 1000
+    }
+  },
+  {
+    "itemIdentifier": 41,
+    "time": 100,
+    "cost": {
+      "Bmats": 125,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 60
+    }
+  },
+  {
+    "itemIdentifier": 42,
+    "time": 50,
+    "cost": {
+      "Bmats": 75,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 43,
+    "time": 100,
+    "cost": {
+      "Bmats": 160,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 44,
+    "time": 50,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 45,
+    "time": 50,
+    "cost": {
+      "Bmats": 75,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 46,
+    "time": 50,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 47,
+    "time": 75,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 48,
+    "time": 30,
+    "cost": {
+      "Bmats": 40,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 49,
+    "time": 30,
+    "cost": {
+      "Bmats": 10,
+      "Emats": 0,
+      "Rmats": 15,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 50,
+    "time": 100,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 15
+    }
+  },
+  {
+    "itemIdentifier": 51,
+    "time": 100,
+    "cost": {
+      "Bmats": 200,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 52,
+    "time": 100,
+    "cost": {
+      "Bmats": 100,
+      "Emats": 10,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 53,
+    "time": 600,
+    "cost": {
+      "Bmats": 0,
+      "Emats": 0,
+      "Rmats": 800,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 54,
+    "time": 100,
+    "cost": {
+      "Bmats": 200,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 55,
+    "time": 100,
+    "cost": {
+      "Bmats": 160,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 56,
+    "time": 35,
+    "cost": {
+      "Bmats": 60,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 57,
+    "time": 40,
+    "cost": {
+      "Bmats": 80,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 58,
+    "time": 50,
+    "cost": {
+      "Bmats": 80,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 59,
+    "time": 80,
+    "cost": {
+      "Bmats": 80,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 60,
+    "time": 225,
+    "cost": {
+      "Bmats": 75,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
+    }
+  },
+  {
+    "itemIdentifier": 61,
+    "time": 225,
+    "cost": {
+      "Bmats": 75,
+      "Emats": 0,
+      "Rmats": 0,
+      "Hmats": 0
     }
   }
 ]
